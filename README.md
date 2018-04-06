@@ -33,3 +33,4 @@ To use the Makefile to run tests in the container, first make sure the makefile 
 ## TODO
 
 * Incorporate pylint/config
+* Handle install new packages on git pull
