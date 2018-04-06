@@ -1,4 +1,5 @@
-CONTAINER=[container_name_here]
+# If container name changes, change variable
+CONTAINER=pythonapitemplate_api_1
 
 .PHONY: run-script
 run-script:

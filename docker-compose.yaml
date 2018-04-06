@@ -17,5 +17,5 @@ services:
             context: ./api
             dockerfile: Dockerfile
         volumes:
-            - ./api/core:/collections
+            - ./api/core:/api
             - api_sockets:/tmp/api-sockets
