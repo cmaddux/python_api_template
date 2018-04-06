@@ -1,0 +1,21 @@
+version: "3"
+
+volumes:
+    api_sockets:
+
+services:
+
+    nginx:
+        build: ./nginx/
+        ports:
+            - 8080:80
+        volumes:
+            - api_sockets:/tmp/api-sockets
+
+    api:
+        build:
+            context: ./api
+            dockerfile: Dockerfile
+        volumes:
+            - ./api/core:/collections
+            - api_sockets:/tmp/api-sockets
